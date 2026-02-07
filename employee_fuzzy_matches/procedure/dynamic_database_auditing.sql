@@ -1,4 +1,4 @@
-create or alter procedure vw_database_auditing
+create or alter procedure prc_database_auditing
 as
 -- Priority table
 DECLARE @DatePriority TABLE (
