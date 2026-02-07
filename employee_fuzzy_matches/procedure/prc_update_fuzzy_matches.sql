@@ -2,7 +2,7 @@
 
 -- We’ll calculate a similarity score using Levenshtein distance. fn_levenshtein
 
-create or alter procedures dbo.prc_update_fuzzy_matches
+create or alter procedure dbo.prc_update_fuzzy_matches
 as
 begin 
         WITH CandidatePairs AS (
@@ -93,4 +93,5 @@ begin
             start_date,
             matched_job_start_date,
             final_score
-        )
+        );
+END
